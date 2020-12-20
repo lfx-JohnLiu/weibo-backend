@@ -8,3 +8,7 @@ npm i mysql2 sequelize -d
 npm i redis -d
 
 npm i koa-redis koa-generic-session --save
+
+npm i jest -D
+
+npm i supertest --save

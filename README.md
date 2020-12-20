@@ -6,3 +6,5 @@ sequelize ORM 对象-数据库 映射
 npm i mysql2 sequelize -d
 
 npm i redis -d
+
+npm i koa-redis koa-generic-session --save

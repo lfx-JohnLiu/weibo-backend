@@ -12,3 +12,7 @@ npm i koa-redis koa-generic-session --save
 npm i jest -D
 
 npm i supertest --save
+
+npm i eslint babel-eslint --save-dev
+
+npm i pre-commit --save-dev

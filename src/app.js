@@ -12,6 +12,7 @@ const {
     REDIS_CONF
 } = require('./conf/db')
 
+const errorViewRouter = require('./routes/view/error')
 const index = require('./routes/index')
 const users = require('./routes/users')
 
@@ -57,6 +58,8 @@ app.use(session({
 // routes
 app.use(index.routes(), index.allowedMethods())
 app.use(users.routes(), users.allowedMethods())
+
+app.use(errorViewRouter.routes(), errorViewRouter.allowedMethods()) // 404 路由注册到最后面
 
 // error-handling
 app.on('error', (err, ctx) => {
